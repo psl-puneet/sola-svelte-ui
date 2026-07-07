@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { register } from 'swiper/element/bundle';
+	import Button from '$lib/components/ui/Button.svelte';
 
 	const slides = [
 		{
@@ -58,6 +59,9 @@
 					<p class="mt-6 max-w-xl text-lg text-gray-200">
 						{slide.description}
 					</p>
+					<div class="mt-6">
+						<Button href="/services">Read More</Button>
+					</div>
 				</div>
 			</div>
 		</swiper-slide>
