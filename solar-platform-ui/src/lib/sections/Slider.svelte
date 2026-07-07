@@ -35,8 +35,9 @@
 <swiper-container
 	effect="fade"
 	loop="true"
-	navigation="true"
+	navigation="false"
 	pagination="true"
+	pagination-clickable="true"
 	autoplay-delay="4000"
 	speed="1000"
 	class="h-screen"
@@ -62,3 +63,22 @@
 		</swiper-slide>
 	{/each}
 </swiper-container>
+
+<style>
+	swiper-container::part(pagination) {
+		bottom: 60px;
+	}
+	swiper-container::part(bullet),
+	swiper-container::part(bullet-active) {
+		width: 50px;
+		height: 3px;
+		border-radius: 0;
+		opacity: 1;
+	}
+    swiper-container::part(bullet) {
+		background: rgba(255, 255, 255, 0.5);
+	}
+	swiper-container::part(bullet-active) {
+		background: #fd8c4e;
+	}
+</style>
