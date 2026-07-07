@@ -1,7 +1,12 @@
 <script lang="ts">
 	import { MapPin, Phone, Mail, X as XIcon, Send } from 'lucide-svelte';
-	import { SiFacebook as Facebook, SiInstagram as Instagram, SiYoutube as Youtube } from '@icons-pack/svelte-simple-icons';
+	import {
+		SiFacebook as Facebook,
+		SiInstagram as Instagram,
+		SiYoutube as Youtube
+	} from '@icons-pack/svelte-simple-icons';
 	import Linkedin from '$lib/components/icons/LinkedIn.svelte';
+	import Button from '$lib/components/ui/Button.svelte';
 	const socials = [
 		{ icon: Facebook, href: '#' },
 		{ icon: XIcon, href: '#' },
@@ -19,13 +24,13 @@
 	];
 
 	const gallery = [
-        '/images/post1.jpg',
-        '/images/post2.jpg',
-        '/images/post3.jpg',
-        '/images/post4.jpg',
-        '/images/post5.jpg',
-        '/images/post6.jpg'
-    ];
+		'/images/post1.jpg',
+		'/images/post2.jpg',
+		'/images/post3.jpg',
+		'/images/post4.jpg',
+		'/images/post5.jpg',
+		'/images/post6.jpg'
+	];
 
 	let email = $state('');
 </script>
@@ -33,7 +38,6 @@
 <section id="footer" class="bg-sola-cream border-t border-gray-200 mt-10">
 	<div class="container mx-auto px-4">
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-16">
-
 			<!-- Address -->
 			<div>
 				<h5 class="py-3 text-[20px]">Our Address</h5>
@@ -68,7 +72,10 @@
 				<ul class="space-y-2 list-none p-0 m-0">
 					{#each quickLinks as { label, href }}
 						<li>
-							<a {href} class="text-sm uppercase text-sola-dark hover:text-primary transition-colors">
+							<a
+								{href}
+								class="text-sm uppercase text-sola-dark hover:text-primary transition-colors"
+							>
 								{label}
 							</a>
 						</li>
@@ -99,15 +106,16 @@
 						placeholder="Your email address"
 						class="w-full rounded-full px-4 py-2 bg-transparent border border-gray-300 text-sm pr-12 focus:outline-none focus:border-primary"
 					/>
-					<button
-						class="absolute top-1/2 right-1 -translate-y-1/2 bg-primary rounded-full p-1.5 text-white hover:opacity-90 transition-opacity"
+					<Button
+						variant="raw"
+						class="absolute top-1/2 right-1 -translate-y-1/2 bg-primary rounded-full p-1.5 
+						text-white hover:opacity-90 transition-opacity cursor-pointer"
 						aria-label="Subscribe"
 					>
 						<Send size={16} />
-					</button>
+					</Button>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
