@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { MapPin, Phone, Clock, Menu, X as XIcon } from 'lucide-svelte';
-    import { SiFacebook as Facebook, SiLinkerd as Linkedin, SiInstagram as Instagram, SiYoutube as Youtube } from '@icons-pack/svelte-simple-icons';
-	import Button from './Button.svelte';
+    import { SiFacebook as Facebook, SiInstagram as Instagram, SiYoutube as Youtube } from '@icons-pack/svelte-simple-icons';
+	import Linkedin from '$lib/components/icons/LinkedIn.svelte';
+	import Button from '$lib/components/ui/Button.svelte';
 
 	const links = [
 		{ label: 'Home', href: '/' },

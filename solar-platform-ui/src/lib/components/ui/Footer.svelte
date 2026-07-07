@@ -18,7 +18,14 @@
 		{ label: 'Support', href: '/support' }
 	];
 
-
+	const gallery = [
+        '/images/post1.jpg',
+        '/images/post2.jpg',
+        '/images/post3.jpg',
+        '/images/post4.jpg',
+        '/images/post5.jpg',
+        '/images/post6.jpg'
+    ];
 
 	let email = $state('');
 </script>
@@ -29,7 +36,7 @@
 
 			<!-- Address -->
 			<div>
-				<h5 class="py-3">Our Address</h5>
+				<h5 class="py-3 text-[20px]">Our Address</h5>
 				<ul class="space-y-2 text-sm list-none p-0 m-0">
 					<li class="flex items-center gap-2">
 						<MapPin size={16} class="text-primary shrink-0" />
@@ -57,7 +64,7 @@
 
 			<!-- Quick Links -->
 			<div>
-				<h5 class="py-3">Quick Links</h5>
+				<h5 class="py-3 text-[20px]">Quick Links</h5>
 				<ul class="space-y-2 list-none p-0 m-0">
 					{#each quickLinks as { label, href }}
 						<li>
@@ -71,19 +78,19 @@
 
 			<!-- Gallery -->
 			<div>
-				<h5 class="py-3">Project Gallery</h5>
-				<!-- <div class="grid grid-cols-3 gap-1">
+				<h5 class="py-3 text-[20px]">Project Gallery</h5>
+				<div class="grid grid-cols-3 gap-1">
 					{#each gallery as src}
 						<a href={src}>
 							<img {src} alt="project" class="w-full h-20 object-cover" />
 						</a>
 					{/each}
-				</div> -->
+				</div>
 			</div>
 
 			<!-- Newsletter -->
 			<div>
-				<h5 class="py-3">Our Newsletter</h5>
+				<h5 class="py-3 text-[20px]">Our Newsletter</h5>
 				<p class="text-sm mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
 				<div class="relative">
 					<input
@@ -108,8 +115,7 @@
 
 	<div class="container mx-auto px-4">
 		<div class="flex flex-col md:flex-row justify-between items-center py-4 text-sm text-sola-dark">
-			<p>© 2024 Sola - All rights reserved</p>
-			<p>Free Website Template: <a href="https://templatesjungle.com/" target="_blank" class="underline hover:text-primary">TemplatesJungle</a></p>
+			<p>© 2026 Sola - All rights reserved</p>
 		</div>
 	</div>
 </section>
