@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { MapPin, Phone, Mail, X as XIcon, Send } from 'lucide-svelte';
-	import { SiFacebook as Facebook, SiLinkerd as Linkedin, SiInstagram as Instagram, SiYoutube as Youtube } from '@icons-pack/svelte-simple-icons';
+	import { SiFacebook as Facebook, SiInstagram as Instagram, SiYoutube as Youtube } from '@icons-pack/svelte-simple-icons';
+	import Linkedin from '$lib/components/icons/LinkedIn.svelte';
 	const socials = [
 		{ icon: Facebook, href: '#' },
 		{ icon: XIcon, href: '#' },
