@@ -46,6 +46,7 @@
 		"@fontsource/poppins": "^5.2.7",
 		"@fontsource/syne": "^5.2.7",
 		"@icons-pack/svelte-simple-icons": "^6.5.0",
-		"lucide-svelte": "^1.0.1"
+		"lucide-svelte": "^1.0.1",
+		"swiper": "^14.0.1"
 	}
 }
