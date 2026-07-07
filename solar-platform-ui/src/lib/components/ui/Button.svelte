@@ -19,7 +19,7 @@
 			'bg-transparent text-primary border-primary hover:bg-primary hover:text-primary-foreground'
 	};
 
-	const cls = `${base} ${variants[variant] ?? variants.primary}`;
+	const cls = $derived(`${base} ${variants[variant] ?? variants.primary}`);
 </script>
 
 {#if href}
