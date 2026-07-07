@@ -38,7 +38,3 @@ npm run dev
 ```
 
 ## Reference
-
-- `reference/index.html` — original Bootstrap 5 Sola template
-- `reference/figma/` — Figma design file
-- `reference/PLAN.md` — 14-phase build plan
