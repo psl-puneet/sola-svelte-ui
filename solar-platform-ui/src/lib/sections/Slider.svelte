@@ -27,10 +27,7 @@
 </script>
 
 <svelte:head>
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.css"
-	/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.css" />
 </svelte:head>
 
 <swiper-container
@@ -79,7 +76,7 @@
 		border-radius: 0;
 		opacity: 1;
 	}
-    swiper-container::part(bullet) {
+	swiper-container::part(bullet) {
 		background: rgba(255, 255, 255, 0.5);
 	}
 	swiper-container::part(bullet-active) {

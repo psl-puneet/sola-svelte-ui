@@ -1,5 +1,5 @@
 <script lang="ts">
-    let {
+	let {
 		value,
 		label,
 		children
@@ -11,6 +11,6 @@
 </script>
 
 <div class="text-center">
-    <h3 class="text-7xl font-bold text-primary">{value}</h3>
-    <h6>{label}</h6>
+	<h3 class="text-7xl font-bold text-primary">{value}</h3>
+	<h6>{label}</h6>
 </div>

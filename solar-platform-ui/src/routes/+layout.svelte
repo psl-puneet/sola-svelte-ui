@@ -11,6 +11,6 @@
 	<main class="flex-1">
 		{@render children()}
 	</main>
-	<ContactUs/>
+	<ContactUs />
 	<Footer />
 </div>

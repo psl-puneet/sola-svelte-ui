@@ -1,46 +1,46 @@
 @import 'tailwindcss';
-@import "tw-animate-css";
-@import "shadcn-svelte/tailwind.css";
-@import "@fontsource/syne/700.css";
-@import "@fontsource/poppins/400.css";
-@import "@fontsource/poppins/500.css";
+@import 'tw-animate-css';
+@import 'shadcn-svelte/tailwind.css';
+@import '@fontsource/syne/700.css';
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
 
 @custom-variant dark (&:is(.dark *));
 @plugin '@tailwindcss/typography';
 
 :root {
-/* Sola brand tokens */
---background:          oklch(0.97 0.015 80);   /* #F9F4EC cream */
---foreground:          oklch(0.18 0.03 230);    /* #1A2A36 */
---card:                oklch(0.99 0 0);
---card-foreground:     oklch(0.18 0.03 230);
---popover:             oklch(0.99 0 0);
---popover-foreground:  oklch(0.18 0.03 230);
---primary:             oklch(0.71 0.16 50);     /* #FD8C4E orange */
---primary-foreground:  oklch(1 0 0);
---secondary:           oklch(0.95 0.01 210);    /* #E8F0F1 */
---secondary-foreground: oklch(0.18 0.03 230);
---muted:               oklch(0.92 0.01 75);     /* #EAE5DD */
---muted-foreground:    oklch(0.55 0.01 210);    /* #777F81 */
---accent:              oklch(0.90 0.04 210);    /* #c4e9ed */
---accent-foreground:   oklch(0.18 0.03 230);
---destructive:         oklch(0.577 0.245 27.325);
---border:              oklch(0.87 0 0);         /* #DCDCDC */
---input:               oklch(0.87 0 0);
---ring:                oklch(0.71 0.16 50);
---radius:              0.625rem;
+	/* Sola brand tokens */
+	--background: oklch(0.97 0.015 80); /* #F9F4EC cream */
+	--foreground: oklch(0.18 0.03 230); /* #1A2A36 */
+	--card: oklch(0.99 0 0);
+	--card-foreground: oklch(0.18 0.03 230);
+	--popover: oklch(0.99 0 0);
+	--popover-foreground: oklch(0.18 0.03 230);
+	--primary: oklch(0.71 0.16 50); /* #FD8C4E orange */
+	--primary-foreground: oklch(1 0 0);
+	--secondary: oklch(0.95 0.01 210); /* #E8F0F1 */
+	--secondary-foreground: oklch(0.18 0.03 230);
+	--muted: oklch(0.92 0.01 75); /* #EAE5DD */
+	--muted-foreground: oklch(0.55 0.01 210); /* #777F81 */
+	--accent: oklch(0.9 0.04 210); /* #c4e9ed */
+	--accent-foreground: oklch(0.18 0.03 230);
+	--destructive: oklch(0.577 0.245 27.325);
+	--border: oklch(0.87 0 0); /* #DCDCDC */
+	--input: oklch(0.87 0 0);
+	--ring: oklch(0.71 0.16 50);
+	--radius: 0.625rem;
 }
 
 @theme inline {
 	--font-heading: 'Syne', sans-serif;
-	--font-body:    'Poppins', sans-serif;
-	--font-sans:    'Poppins', sans-serif;
+	--font-body: 'Poppins', sans-serif;
+	--font-sans: 'Poppins', sans-serif;
 
 	/* Sola extra tokens available as Tailwind classes */
-	--color-sola-black:   oklch(0.18 0.03 230);
-	--color-sola-dark:    oklch(0.34 0.01 60);
-	--color-sola-cadet:   oklch(0.73 0.04 200);
-	--color-sola-cream:   oklch(0.97 0.015 80);
+	--color-sola-black: oklch(0.18 0.03 230);
+	--color-sola-dark: oklch(0.34 0.01 60);
+	--color-sola-cadet: oklch(0.73 0.04 200);
+	--color-sola-cream: oklch(0.97 0.015 80);
 
 	/* Spacing for sections */
 	--spacing-section-sm: 8.125rem;
@@ -48,55 +48,60 @@
 	--spacing-section-lg: 12rem;
 
 	/* shadcn token wiring (keep as-is) */
-	--color-background:   var(--background);
-	--color-foreground:   var(--foreground);
-	--color-primary:      var(--primary);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-primary: var(--primary);
 	--color-primary-foreground: var(--primary-foreground);
-	--color-secondary:    var(--secondary);
+	--color-secondary: var(--secondary);
 	--color-secondary-foreground: var(--secondary-foreground);
-	--color-muted:        var(--muted);
+	--color-muted: var(--muted);
 	--color-muted-foreground: var(--muted-foreground);
-	--color-accent:       var(--accent);
+	--color-accent: var(--accent);
 	--color-accent-foreground: var(--accent-foreground);
-	--color-destructive:  var(--destructive);
-	--color-border:       var(--border);
-	--color-input:        var(--input);
-	--color-ring:         var(--ring);
-	--color-card:         var(--card);
+	--color-destructive: var(--destructive);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+	--color-card: var(--card);
 	--color-card-foreground: var(--card-foreground);
-	--color-popover:      var(--popover);
+	--color-popover: var(--popover);
 	--color-popover-foreground: var(--popover-foreground);
 	--radius-sm: calc(var(--radius) * 0.6);
 	--radius-md: calc(var(--radius) * 0.8);
 	--radius-lg: var(--radius);
 }
 
-
 @layer base {
-    * { @apply border-border outline-ring/50; }
-    body {
-      @apply bg-background text-foreground;
-      font-family: var(--font-body);
-      font-size: 16px;
-      line-height: 164%;
-      letter-spacing: 0.32px;
-    }
-    h1, h2, h3, h4, h5 {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      color: var(--color-sola-black);
-      letter-spacing: 0.84px;
-      line-height: 115%;
-      text-transform: capitalize;
-    }
-    h6 {
-      font-family: var(--font-body);
-      font-weight: 500;
-      color: var(--color-sola-dark);
-      text-transform: uppercase;
-    }
-    a {
-      text-decoration: none;
-      transition: color 0.3s ease-in-out;
-    }
+	* {
+		@apply border-border outline-ring/50;
+	}
+	body {
+		@apply bg-background text-foreground;
+		font-family: var(--font-body);
+		font-size: 16px;
+		line-height: 164%;
+		letter-spacing: 0.32px;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: var(--font-heading);
+		font-weight: 700;
+		color: var(--color-sola-black);
+		letter-spacing: 0.84px;
+		line-height: 115%;
+		text-transform: capitalize;
+	}
+	h6 {
+		font-family: var(--font-body);
+		font-weight: 500;
+		color: var(--color-sola-dark);
+		text-transform: uppercase;
+	}
+	a {
+		text-decoration: none;
+		transition: color 0.3s ease-in-out;
+	}
 }

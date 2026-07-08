@@ -39,12 +39,12 @@
 		0% {
 			transform: translate(-50%, -50%) scale(0.8);
 		}
-        100% {
-            transform: translate(-50%, -50%) scale(1.1);
-        }
+		100% {
+			transform: translate(-50%, -50%) scale(1.1);
+		}
 	}
 
-    a.play-btn{
-        animation: play 1.5s alternate infinite ease-in
-    }
+	a.play-btn {
+		animation: play 1.5s alternate infinite ease-in;
+	}
 </style>

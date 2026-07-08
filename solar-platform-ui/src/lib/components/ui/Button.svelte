@@ -21,7 +21,8 @@
 		'inline-block px-8 py-4 rounded-full text-sm uppercase tracking-widest transition-all duration-300 cursor-pointer border';
 	const variants: Record<string, string> = {
 		primary: 'bg-primary text-primary-foreground border-primary hover:opacity-90',
-		outline: 'bg-transparent text-primary border-primary hover:bg-primary hover:text-primary-foreground',
+		outline:
+			'bg-transparent text-primary border-primary hover:bg-primary hover:text-primary-foreground',
 		raw: ''
 	};
 

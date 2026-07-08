@@ -15,6 +15,6 @@
 	<section>
 		<h2 class="mb-4">SectionLabel</h2>
 		<SectionLabel>Why Choose Us</SectionLabel>
-        <SectionLabel class="text-[#6C63FF]">Overridden</SectionLabel>
+		<SectionLabel class="text-[#6C63FF]">Overridden</SectionLabel>
 	</section>
 </div>
