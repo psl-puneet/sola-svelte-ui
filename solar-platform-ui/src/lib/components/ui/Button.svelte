@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { cn } from '$lib/utils';
-
+	import type { Snippet } from 'svelte';
+	type NonEmptyString = string;
+	
 	let {
 		variant = 'primary',
 		href,
@@ -10,11 +12,11 @@
 		children
 	}: {
 		variant?: 'primary' | 'outline' | 'raw';
-		href?: string;
+		href?: NonEmptyString;
 		onclick?: () => void;
 		class?: string;
 		'aria-label'?: string;
-		children: () => any;
+		children: Snippet;
 	} = $props();
 
 	const base =
