@@ -26,7 +26,9 @@
 
 <section id="services" class="py-[5rem]">
 	<div class="w-full">
-		<h6 class="text-center text-primary uppercase tracking-widest text-sm font-medium">Our Services</h6>
+		<h6 class="text-center text-primary uppercase tracking-widest text-sm font-medium">
+			Our Services
+		</h6>
 		<h3 class="text-center text-4xl font-bold mt-2 mb-12">Best Services From Us</h3>
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
 			{#each services as service}
