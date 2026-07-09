@@ -2,7 +2,7 @@
 	import { cn } from '$lib/utils';
 	import type { Snippet } from 'svelte';
 	type NonEmptyString = string;
-	
+
 	let {
 		variant = 'primary',
 		href,
