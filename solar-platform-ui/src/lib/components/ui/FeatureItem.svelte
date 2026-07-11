@@ -1,5 +1,14 @@
 <script lang="ts">
-	let { number, label }: { number?: string; label?: string } = $props();
+	import clsx from 'clsx';
+	let {
+		number,
+		label,
+		labelPosition = 'bottom-4 right-1/3 -translate-y-1/2'
+	}: {
+		number?: string;
+		label?: string;
+		labelPosition?: string;
+	} = $props();
 </script>
 
 <div class="relative flex items-center">
@@ -9,5 +18,5 @@
 	>
 		{number}
 	</h2>
-	<h6 class="absolute bottom-4 right-1/3 -translate-y-1/2">{label}</h6>
+	<h6 class={clsx('absolute', labelPosition)}>{label}</h6>
 </div>
