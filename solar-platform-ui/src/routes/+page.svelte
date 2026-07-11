@@ -4,6 +4,7 @@
 	import AboutSection from '$lib/sections/about-us.svelte';
 	import Services from '$lib/sections/services.svelte';
 	import Features from '$lib/sections/feature.svelte';
+	import Projects from '$lib/sections/projects.svelte';
 </script>
 
 <HeroSlider />
@@ -11,3 +12,4 @@
 <AboutSection />
 <Services />
 <Features />
+<Projects />

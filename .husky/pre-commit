@@ -1,1 +1,1 @@
-cd solar-platform-ui && npm run check && npm run lint || true
+cd solar-platform-ui && npm run check
